@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="style_mobile.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Resume_Generator</title>
+</head>
+
+<body>
+    <div id="form_fill">
+        <div id="head">
+            <h1>Online Resume Builder</h1>
+            <p>This is a free Online Website,where you make your Resume in just 2-minutes</p>
+        </div>
+
+        <div id="container">
+            <div id="left">
+                <h3>Personal Information</h3>
+                <form class="form_style">
+                    <div>
+                        <label for="NameField">Your Name</label>
+                        <input type="text" id="NameField" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                        <label for="PhotoField">Choose Your Picture</label>
+                        <input type="file" id="PhotoField" colour="white">
+                    </div>
+                    <div>
+                        <label for="PhoneField">Your Phone Number</label>
+                        <input type="number" id="PhoneField" placeholder="Enter your Phone Number">
+                    </div>
+                    <div>
+                        <label for="EmailField">Your E-Mail Id</label>
+                        <input type="email" id="EmailField" placeholder="Enter your Email-id">
+                    </div>
+                    <div>
+                        <label for="AddressField">Your Address</label>
+                        <textarea id="AddressField" placeholder="Enter your Address"></textarea>
+                    </div>
+                    <div id="hobF">
+                        <label for="">Your Hobbies</label>
+                        <textarea class="HobbieField" placeholder="Enter your Hobbies" rows="1"></textarea>
+                        <button type="button" id="btn_5" onclick="Addnewhobbyfield()">ADD</button>
+                    </div>
+                </form>
+                <h3>Important Links</h3>
+                <form class="form_style">
+                    <div>
+                        <label for="Glink">GitHub</label>
+                        <input type="text" id="Glink" placeholder="Enter your GitHub Profile Link">
+                    </div>
+                    <div>
+                        <label for="Llink">LinkedIn</label>
+                        <input type="text" id="Llink" placeholder="Enter your LinkedIn Profile Link">
+                    </div>
+                    <div>
+                        <label for="Flink">Facebook</label>
+                        <input type="text" id="Flink" placeholder="Enter your Facebook Profile Link">
+                    </div>
+                </form>
+                <h3>Cirtificates & Achievements</h3>
+                <form class="form_style">
+                    <div id="cirF">
+                        <textarea class="CirtificatesField" placeholder="Enter your Cirtificates & Achievements"
+                            rows="2"></textarea>
+                        <button type="button" id="btn_6" onclick="AddnewCirtifield()">ADD</button>
+                    </div>
+                </form>
+            </div>
+            <div id="right">
+                <h3>Professional Background</h3>
+                <form class="form_style">
+                    <div>
+                        <label for="ObjectiveField">Carrer Objective</label>
+                        <textarea id="ObjectiveField" rows="3" placeholder="Enter your Carrer Objective"></textarea>
+                    </div>
+                    <div id="EduF">
+                        <label for="">Educational Details</label>
+                        <textarea class="EducationField" rows="3" placeholder="Enter your Education Details"></textarea>
+                        <button type="button" id="btn_1" onclick="AddnewEdufield()">ADD</button>
+                    </div>
+                    <div id="skF">
+                        <label for="">Technical Skills</label>
+                        <textarea class="SkillField" placeholder="Enter your Skills" rows="1"></textarea>
+                        <button type="button" id="btn_7" onclick="AddnewSkillfield()">ADD</button>
+                    </div>
+
+                    <div id="ExpF">
+                        <label for="">Work Experience</label>
+                        <textarea class="ExperienceField" rows="3"
+                            placeholder="Enter your Work Experience Details"></textarea>
+                        <button type="button" id="btn_2" onclick="AddnewExpfield()">ADD</button>
+                    </div>
+
+                    <div id="ProF">
+                        <label for="">Project</label>
+                        <textarea class="ProjectField" id="Pro_name" rows="2" placeholder="Enter your Project Details"></textarea>
+                        <textarea class="ProjectField" id="Pro_link" rows="1" placeholder="Enter your Project Link"></textarea>
+                        <button type="button" id="btn_3" onclick="AddnewProfield()">ADD</button>
+                    </div>
+                </form>
+                <h3>Languages known</h3>
+                <form class="form_style">
+                    <div id="langF">
+                        <label for="">Languages</label>
+                        <textarea class="LanguagerField" rows="1" placeholder="Languages known"></textarea>
+                        <button type="button" id="btn_8" onclick="AddnewLangfield()">ADD</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div>
+            <button id="btn" onclick="generate()">Genarate CV</button>
+        </div>
+        <div id="footer" class="middle">
+            <p>ALL RIGHTS AND COPYRIGHT @RISHAV_DUTTA|2022</p>
+        </div>
+    </div>
+    <div id="download">
+        <button id="btn_4"> Download CV</button>
+    </div>
+    <div id="template">
+        <div id="temp_mini">
+            <div id="personal_part">
+                <div id="box_1">1</div>
+                <div id="intro">
+                    <p id="nameT">RISHAV DUTTA</p>
+                    <img id="imgT" src="default_img.png">
+                </div>
+                <div class="Design" id="contact">
+                    <h3>CONTACT</h3>
+                    <hr>
+                    <h4>Address:</h4>
+                    <p id="addressT">Baruipur Ukilpara Kolkata-700144</p>
+                    <h4>Phone Number:</h4>
+                    <p id="phoneT">+91 7980710289</p>
+                    <h4>Email-Id:</h4>
+                    <p id="emailT">rishavdutta.brp@gmail.com</p>
+                </div>
+                <div class="Design" id="social">
+                    <h3>SOCIAL PROFILE</h3>
+                    <hr>
+                    <ul>
+                        <li><a id="GlinkT" href="http://github.com" target="_blank">GitHub</a></li>
+                        <li><a id="LlinkT" href="http://LinkedIn.com" target="_blank">LinkedIn</a></li>
+                        <li><a id="FlinkT" href="https://Facebook" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="Design" id="Languages">
+                    <h3>LANGUAGE</h3>
+                    <hr>
+                    <ul id="langT">
+                        <li>Bengali-Proficient-Native</li>
+                        <li>English-Proficient</li>
+                        <li>Hindi-Intermediate</li>
+                    </ul>
+                </div>
+                <div class="Design" id="Hobbies">
+                    <h3>HOBBIES</h3>
+                    <hr>
+                    <ul id="hobT">
+                        <li>Cricket</li>
+                        <li>Football</li>
+                        <li>Watching Tv</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="profes_part">
+                <div class="Design" id="Objective">
+                    <h3>SUMMARY</h3>
+                    <hr>
+                    <p id="ObjectiveFieldT">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat
+                        impedit libero. Animi,
+                        ratione dolor ab sint voluptates repudiandae atque mollitia, voluptate itaque cupiditate dolore
+                        maxime. Ut perferendis fugiat, quam itaque possimus iusto sequi tempore maxime illum corrupti
+                        tempora? Ratione id laboriosam, sed sunt fuga dolore possimus. Assumenda, ducimus et.</p>
+                </div>
+                <div class="Design" id="Skill">
+                    <h3>TECHNICAL SKILL</h3>
+                    <hr>
+                    <ul id="techT">
+                        <li>JAVA</li>
+                        <li>C</li>
+                        <li>JAVASCRIPT</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="Design" id="Education">
+                    <h3>EDUCATION</h3>
+                    <hr>
+                    <ul id="EducationFieldT">
+                        <li>RCCIIT-Btech Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, natus! </li>
+                        <li>BHS-12th Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quibusdam! </li>
+                        <li>BHS-10th Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, numquam? </li>
+                    </ul>
+                </div>
+                <div class="Design" id="Experience">
+                    <h3>WORK EXPERIENCE</h3>
+                    <hr>
+                    <ul id="ExperienceFieldT">
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, natus! </li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quibusdam! </li>
+                    </ul>
+                </div>
+                <div class="Design" id="Project">
+                    <h3>PROJECTS</h3>
+                    <hr>
+                    <ul id="ProjectT">
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, natus!|<a href="">LINK</a></li>
+                    </ul>
+                </div>
+                <div class="Design" id="Cirtifi">
+                    <h3>CIRTIFICATE & ACHIEVEMENTS</h3>
+                    <hr>
+                    <ol id="cirT">
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, natus! </li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quibusdam! </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="box_2">1</div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+
+#form_fill #container {
+    flex-direction: column;
+}
+
+#form_fill #left {
+    width: 95%;
+    margin: 0px auto;
+}
+
+#form_fill .form_style div {
+    align-items: center;
+}
+
+#form_fill #right {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------- */
+

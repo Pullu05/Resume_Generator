@@ -1,0 +1,10 @@
+#container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+}
+#container p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+

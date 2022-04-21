@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-image: url();
+}
+
+
+
+#form_fill{
+background-color: #ede6cb;
+}
+/* STRATING OF FROM_FILL CSS--------------------------------------------------------- */
+.middle{
+    text-align: center;
+}
+/* ------------------------------------------- */
+#head{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+#head h1{
+    margin-bottom: 8px;
+    text-shadow: 2px -2px #bc5f5f;
+}
+#head p{
+    font-size: 1.1rem;
+    color: mediumvioletred;
+    font-weight: bold;
+}
+/* ----------------------------------------------------- */
+
+#container{
+    display: flex;
+    margin: 1.5% 5%;
+    
+}
+#container h3{
+    font-size: 1.4rem;
+    margin: 15px 0px;
+}
+.form_style div{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form_style div label{
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form_style div input,textarea{
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 9px;
+    border: 2px solid black;
+}
+input#PhotoField {
+    background-color: white;
+}
+.margin_newAddedTextArea{
+    margin-top: 10px;
+}
+#left{
+    width: 50%;
+    margin: 0px 50px;
+}
+#right{
+    width: 50%;
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 1% 35%;
+    padding: 2px 5px;
+    border: 2px solid #7157c0;
+    background: #7157c0;
+    border-radius: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+#btn{
+    width: 100px;
+    margin: 0px auto;
+    padding: 6px;
+    font-size: 16px;
+}
+div a{
+    text-decoration:none;
+}
+
+/* --------------------------------------------------- */
+#footer{
+    background-color: black;
+    color: wheat;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------
+STRATING OF TEMPLATE CSSS
+*/
+
+#template{
+    display: flex;
+    flex-direction: column;
+    width:1123px ;
+    height:1587px;
+    margin: 0px auto;
+    background-color: #dcd3e9;
+}
+#temp_mini{
+    display: flex;
+}
+
+/* -------------------------------------- */
+#personal_part{
+    width: 40%;
+}
+#box_1{
+    background-color: rgb(59, 59, 137);
+    height: 75px;
+    color:rgb(59, 59, 137);
+}
+#intro{
+    margin: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#intro p{
+    font-size: 60px;
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: bold;
+    color:rgb(17 17 182);
+}
+#intro img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 25px 0px;
+}
+
+.Design{
+    margin: 20px 50px;
+}
+hr{
+    border: none;
+    height: 1.5px;
+    background-color: rgb(17 17 182);
+}
+.Design h3{
+    font-weight: bold;
+    font-size: 24px;
+    color:rgb(17 17 182);
+}
+.Design h4{
+    font-size:22px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.Design p{
+    font-size:19px
+}
+
+#social ul{
+    margin: 20px 35px;
+}
+#social li{
+    margin:10px 0px;
+}
+#social li a{
+    text-decoration: none;
+    margin: 8px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+#Languages ul,#Hobbies ul,#Skill ul ,#Education ul,#Experience ul,#Project ul{
+    margin: 20px 35px;
+}
+#Languages li,#Hobbies li, #Skill li ,#Education li, #Experience li ,#Project li{
+    margin: 8px 0px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: black;
+
+}
+
+/* ------------------------------------------------------- */
+#profes_part{
+    width: 60%;
+    margin-top: 75px;
+}
+#box_2{
+    background-color: rgb(59, 59, 137);
+    height: 75px;
+    color: rgb(59, 59, 137);
+    /* width: 65.1%; */
+    width: 674px;
+    position: absolute;
+    top: 1514px;
+    margin-left: 450px;
+}
+
+#Objective p{
+   margin-top: 12px;
+   font-size: 20px;
+}
+
+#Skill ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Skill ul li{
+    width: 50%;
+}
+
+#Cirtifi ol,#Achive ol{
+    margin: 20px 35px;
+}
+
+#Cirtifi li,#Achive li{
+    margin: 8px 0px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: black;
+}
+
+#btn_4{
+    width: 20%;
+    height: 35px;
+    position: fixed;
+    bottom: 3px;
+    display: block;
+    z-index: 1;
+}
+/* -------------------------------------------- */
+#template{
+    display: none;
+}
+#download{
+    display: none;
+}
